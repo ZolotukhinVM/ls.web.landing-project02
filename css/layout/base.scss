@@ -1,0 +1,97 @@
+$color-header: #292929;
+$color-text: #666;
+$bg-button: #FEDB3F;
+$bg-cirle-color: #F2F5F4;
+$size-h1-h2: 48px;
+$size-h3: 36px;
+$size-text: 18px;
+
+* {
+  box-sizing: border-box;
+}
+
+body  {
+  font: 400 16px/1.42 'Alegreya Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: $size-text;
+  color: $color-text;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-width: 1140px;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+section {
+  width: 100vh;
+  height: 100vw;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+@mixin h-title ($size: $size-h1-h2, $align: left) {
+  color: #000;
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: $size;
+  text-align: $align;
+}
+
+h1 {
+  @include h-title;
+}
+
+h2 {
+  @include h-title($align: center);
+} 
+
+h3 {
+  font-size: $size-h3;
+}
+
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  background: $bg-button;
+  padding: 21px 41px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  border-radius: 100px;
+  display: inline-block;
+  
+  &:hover {
+    color: $bg-button;
+    background: #000;
+    cursor: pointer;
+    transition: .5s;
+  }
+}
