@@ -1,3 +1,7 @@
 @import url(./layout/normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
 @import url(./layout/base.css);
+@import url(./blocks/hero.css);
+@import url(./blocks/why.css);
+@import url(./blocks/map.css);
+@import url(./blocks/footer.css);

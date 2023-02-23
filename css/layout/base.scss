@@ -4,20 +4,19 @@ $bg-button: #FEDB3F;
 $bg-cirle-color: #F2F5F4;
 $size-h1-h2: 48px;
 $size-h3: 36px;
-$size-text: 18px;
 
 * {
   box-sizing: border-box;
 }
 
 body  {
-  font: 400 16px/1.42 'Alegreya Sans', Helvetica, sans-serif;
+  font: 400 18px/1.42 'Alegreya Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   margin: 0;
   height: 100%;
   width: 100%;
-  font-size: $size-text;
+  font-size: 18px;
   color: $color-text;
 }
 
@@ -30,12 +29,16 @@ body  {
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  width: 990px;
 }
 
 section {
-  width: 100vh;
-  height: 100vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+a {
+  color: inherit;
 }
 
 img {
@@ -58,10 +61,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 @mixin h-title ($size: $size-h1-h2, $align: left) {
   color: #000;
-  line-height: 1.1;
+  line-height: 1.2;
   font-weight: 700;
   font-size: $size;
   text-align: $align;
+  text-transform: uppercase;
 }
 
 h1 {
