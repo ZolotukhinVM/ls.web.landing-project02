@@ -7,6 +7,9 @@
 .section__title {
   margin-bottom: 50px;
 }
+.section__title--color--white {
+  color: #fff;
+}
 
 .headline {
   text-align: center;

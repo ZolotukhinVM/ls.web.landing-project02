@@ -1,0 +1,111 @@
+.order-section {
+  background: url("./../../images/order/bg.jpeg") center center no-repeat;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: 1;
+  }
+}
+
+.order-container {
+  position: relative;
+  z-index: 10;
+}
+
+.form {
+  display: flex;
+  color: #fff;
+}
+
+.form__col {
+  flex: 1;
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.form__block {
+  flex: 1;
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  padding: 18px 12px;
+  border: 3px solid transparent;
+  &--textarea {
+    height: 152px;
+    resize: none;
+  }
+  &:focus {
+    border-color: #FEDB3F;
+    outline: none;
+  }
+}
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.radio {
+  gap: 10px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  cursor: pointer;
+  user-select: none; //dont work why?
+
+  &--checkbox {
+    .radio__visible {
+     border-radius: 0;
+      &:before {
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+.radio__elem {
+  display: none; //not good
+  &:checked ~ .radio__visible {
+    &:before {
+      display: block;
+    }
+  }
+}
+
+.radio__visible {
+  width: 26px;
+  height: 26px;
+  border-radius: 100%;
+  position: relative;
+  background: #fff;
+  &:before {
+    content: '';
+    display: none;
+    width: 14px;
+    height: 14px;
+    background-color: #c9a400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+  }
+}

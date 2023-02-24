@@ -6,6 +6,9 @@
 
 .section__title {
   margin-bottom: 50px;
+  &--color--white {
+    color: #fff;
+  }
 }
 
 .headline {

@@ -79,10 +79,19 @@ h3 {
   text-align: center;
   border-radius: 100px;
   display: inline-block;
+  border: none;
 }
 .button:hover {
   color: #FEDB3F;
   background: #000;
   cursor: pointer;
   transition: .5s;
+}
+.button--theme--transparent {
+  background: transparent;
+  color: #fff;
+  text-transform: none;
+}
+.button--theme--transparent:hover {
+  background: transparent;
 }
