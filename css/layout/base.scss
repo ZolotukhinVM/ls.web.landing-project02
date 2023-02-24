@@ -3,7 +3,7 @@ $color-text: #666;
 $bg-button: #FEDB3F;
 $bg-cirle-color: #F2F5F4;
 $size-h1-h2: 48px;
-$size-h3: 36px;
+$size-h3: 32px;
 
 * {
   box-sizing: border-box;
@@ -59,24 +59,21 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: normal;
 }
 
-@mixin h-title ($size: $size-h1-h2, $align: left) {
+h1 {
   color: #000;
   line-height: 1.2;
   font-weight: 700;
-  font-size: $size;
-  text-align: $align;
   text-transform: uppercase;
-}
-
-h1 {
-  @include h-title;
+  font-size: $size-h1-h2;
 }
 
 h2 {
-  @include h-title($align: center);
+  @extend h1;
+  text-align: center;
 } 
 
 h3 {
+  @extend h1;
   font-size: $size-h3;
 }
 

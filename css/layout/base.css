@@ -47,31 +47,25 @@ ul li {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h2, h3, h4, h5, h6, p {
   margin: 0;
   font-weight: normal;
 }
 
-h1 {
+h1, h2, h3 {
   color: #000;
   line-height: 1.2;
   font-weight: 700;
-  font-size: 48px;
-  text-align: left;
   text-transform: uppercase;
+  font-size: 48px;
 }
 
 h2 {
-  color: #000;
-  line-height: 1.2;
-  font-weight: 700;
-  font-size: 48px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .button {

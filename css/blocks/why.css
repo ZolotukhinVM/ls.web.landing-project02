@@ -27,13 +27,24 @@
 
 .benefits__item {
   flex: 1;
-  margin: 0 3%;
+  padding: 0 3%;
+  position: relative;
 }
 .benefits__item:first-child {
-  margin-left: 0;
+  padding-left: 0;
 }
 .benefits__item:last-child {
-  margin-right: 0;
+  padding-right: 0;
+}
+.benefits__item:last-child:before {
+  display: none;
+}
+.benefits__item:before {
+  content: url("./../../images/why/separator.png");
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transform: translateX(50%);
 }
 
 .benefit {

@@ -63,6 +63,10 @@ header {
   font-weight: 700;
   color: #fff;
 }
+.phonenumber--color--black--fw--normal {
+  color: black;
+  font-weight: normal;
+}
 
 .phonenumber__icon {
   width: 12px;

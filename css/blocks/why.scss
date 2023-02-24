@@ -27,9 +27,22 @@
 
 .benefits__item {
   flex: 1;
-  margin: 0 3%;
-  &:first-child {margin-left: 0;}
-  &:last-child {margin-right: 0;}
+  padding: 0 3%;
+  position: relative;
+  &:first-child {padding-left: 0;}
+  &:last-child {
+    padding-right: 0;
+    &:before {
+      display: none;
+    }
+  }
+  &:before {
+    content: url('./../../images/why/separator.png');
+    position: absolute;
+    top: 20%;
+    right: 0;
+    transform: translateX(50%);
+  }
 }
 
 .benefit {

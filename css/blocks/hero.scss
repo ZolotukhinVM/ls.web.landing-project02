@@ -64,7 +64,11 @@ header {
   display: flex;
   align-items: center;
   font-weight: 700;
-  color:#fff
+  color:#fff;
+  &--color--black--fw--normal {
+    color: black;
+    font-weight: normal;
+  }
 }
 
 .phonenumber__icon {
