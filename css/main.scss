@@ -1,0 +1,18 @@
+$color-header: #292929;
+$color-text: #666;
+$bg-button: #FEDB3F;
+$bg-cirle-color: #F2F5F4;
+$size-h1-h2: 48px;
+$size-h3: 32px;
+
+@import "./layout/normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+@import "./layout/base";
+@import "./layout/fixed-menu";
+@import "./blocks/hero";
+@import "./blocks/why";
+@import "./blocks/map";
+@import "./blocks/footer";
+@import "./blocks/reviews";
+@import "./blocks/order";
+

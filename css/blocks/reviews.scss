@@ -59,25 +59,13 @@
   overflow: hidden;
   transition: .4s;
   &:hover {
-    border-color: #FEDB3F;
-    
+    border-color: $bg-button;
   }
 }
 
-
-
-// .avatar__link {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   left: 0;
-//   bottom: 0;
-//   display: block;
-// }
-
-// .avatar__img  {
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover ;
-// }
+.avatar__img  {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover ;
+}
