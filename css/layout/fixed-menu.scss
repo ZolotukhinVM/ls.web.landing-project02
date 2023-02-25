@@ -26,6 +26,13 @@
   display: block;
   position: relative;
 
+  &:hover {
+    border-color: #fff;
+    &:before {
+      background-color: $bg-button;
+    }
+  }
+
   &:before {
     content: '';
     display: block;
