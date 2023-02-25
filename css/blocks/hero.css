@@ -56,7 +56,7 @@ header {
   text-decoration: underline;
 }
 
-.phonenumber {
+.phone {
   font-size: 22px;
   text-decoration: none;
   display: flex;
@@ -64,12 +64,12 @@ header {
   font-weight: 700;
   color: #fff;
 }
-.phonenumber--color--black--fw--normal {
+.phone--color--black--fw--normal {
   color: black;
   font-weight: normal;
 }
 
-.phonenumber__icon {
+.phone__icon {
   width: 12px;
   height: 12px;
   margin-right: 6px;

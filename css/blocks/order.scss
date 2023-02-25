@@ -33,6 +33,9 @@
 .form__row {
   display: flex;
   margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form__block {
@@ -61,15 +64,17 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .radio {
-  gap: 10px;
   margin-right: 15px;
-  margin-bottom: 20px;
   display: flex;
   cursor: pointer;
   user-select: none; //dont work why?
+  &:last-child {
+    margin-right: 0;
+  }
 
   &--checkbox {
     .radio__visible {

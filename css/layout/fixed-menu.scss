@@ -8,13 +8,16 @@
 
 .fixed-menu__item {
   margin-bottom: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &--active {
     .fixed-menu__link {
       border-color: #fff;
     }
   }
 }
-  
+
 .fixed-menu__link {
   width: 16px;
   height: 16px;

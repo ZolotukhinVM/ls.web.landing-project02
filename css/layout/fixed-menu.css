@@ -9,6 +9,9 @@
 .fixed-menu__item {
   margin-bottom: 5px;
 }
+.fixed-menu__item:last-child {
+  margin-bottom: 0;
+}
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
