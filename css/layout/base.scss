@@ -1,3 +1,10 @@
+$color-header: #292929;
+$color-text: #666;
+$bg-button: #FEDB3F;
+$bg-cirle-color: #F2F5F4;
+$size-h1-h2: 48px;
+$size-h3: 32px;
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +18,7 @@ body  {
   width: 100%;
   font-size: 18px;
   color: $color-text;
-}
+} 
 
 .wrapper {
   overflow: hidden;
