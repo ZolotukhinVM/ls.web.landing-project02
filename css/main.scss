@@ -1,8 +1,6 @@
-// $projectFontSize = ???;
-
-// @function rem($px){
-// 	@return $px / $projectFontSize + 0rem;
-// }
+@function rem($px){
+	@return $px / $projectFontSize + 0rem;
+}
 
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
 	content: $content; 

@@ -4,10 +4,10 @@
 }
 
 .team__item-photo {
-  width: 220px;
-  height: 290px;
+  width: rem(220px);
+  height: rem(290px);
   object-fit: cover;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .team__item-info {
@@ -20,7 +20,7 @@
 
 .team__item-name {
   color: #292929;
-  font-size: 21px;
+  font-size: rem(21px);
   font-weight: 700;
   position: relative;
   &:after {

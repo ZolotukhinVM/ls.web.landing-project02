@@ -24,7 +24,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 25px;
+  margin-right: rem(25px);
   &:last-child {
     margin-right: 0;
   }
@@ -32,7 +32,7 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
   &:last-child {
     margin-bottom: 0;
   }
@@ -40,7 +40,7 @@
 
 .form__block {
   flex: 1;
-  margin-right: 15px;
+  margin-right: rem(15px);
   &:last-child {
     margin-right: 0;
   }
@@ -49,14 +49,14 @@
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 12px;
-  border: 3px solid transparent;
+  padding: rem(18px) rem(12px);
+  border: rem(3px) solid transparent;
   &--textarea {
-    height: 152px;
+    height: rem(152px);
     resize: none;
   }
   &:focus {
-    border-color: #FEDB3F;
+    border-color: $bg-button;
     outline: none;
   }
 }
@@ -64,11 +64,11 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .radio {
-  margin-right: 15px;
+  margin-right: rem(15px);
   display: flex;
   cursor: pointer;
   user-select: none; //dont work why?
@@ -97,17 +97,17 @@
 
 .radio__visible {
   margin-right: 10px;
-  width: 26px;
-  height: 26px;
+  width: rem(26px);
+  height: rem(26px);
   border-radius: 100%;
   position: relative;
   background: #fff;
   &:before {
     content: '';
     display: none;
-    width: 14px;
-    height: 14px;
-    background-color: #c9a400;
+    width: rem(14px);
+    height: rem(14px);
+    background-color: $bg-button;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -117,5 +117,5 @@
 }
 
 .form__buttons {
-  margin-top: 20px;
+  margin-top: rem(20px);
 }

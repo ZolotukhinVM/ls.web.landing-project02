@@ -1,5 +1,5 @@
 .footer {
-  padding: 18px 0;
+  padding: rem(18px) 0;
   background: #fff;
   position: absolute;
   width: 100%;
@@ -16,7 +16,7 @@
 }
 
 .footer__address {
-  font-size: 21px;
+  font-size: rem(21px);
 }
 
 address {
@@ -30,8 +30,8 @@ address {
 }
 
 .social__item {
-  width: 20px;
-  height: 20px;
+  width: rem(20px);
+  height: rem(20px);
   margin-right: 14px;
   display: flex;
   align-items: center;

@@ -1,35 +1,39 @@
+$projectFontSize: 18px;
 $color-header: #292929;
 $color-text: #666;
 $bg-button: #FEDB3F;
 $bg-cirle-color: #F2F5F4;
-$size-h1-h2: 48px;
-$size-h3: 32px;
+$size-h1-h2: rem(48px);
+$size-h3: rem(32px);
 
 * {
   box-sizing: border-box;
 }
 
-body  {
+html {
   font: 400 18px/1.42 'Alegreya Sans', Helvetica, sans-serif;
+}
+
+body  {
+  // font: 400 18px/1.42 'Alegreya Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   margin: 0;
   height: 100%;
   width: 100%;
-  font-size: 18px;
   color: $color-text;
 } 
 
 .wrapper {
-  overflow: hidden;
-  min-width: 1140px;
+  // overflow: hidden;
+  min-width: rem(990px);
   height: 100%;
   width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  width: 990px;
+  width: rem(990px);
 }
 
 section {
@@ -65,7 +69,7 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: $size-h1-h2;
-}
+} 
 
 h2 {
   @extend h1;
@@ -78,10 +82,10 @@ h3 {
 }
 
 .button {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 800;
   background: $bg-button;
-  padding: 21px 41px;
+  padding: rem(21px) rem(41px);
   text-transform: uppercase;
   text-decoration: none;
   color: #000;

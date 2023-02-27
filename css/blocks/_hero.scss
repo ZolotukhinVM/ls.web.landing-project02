@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: inherit;
-  padding: 28px 0 36px 0;
+  padding: rem(28px) 0 rem(36px) 0;
   position: relative;
   z-index: 10;
 }
@@ -34,8 +34,8 @@ header {
 }
 
 .logo {
-  width: 56px;
-  height: 40px;
+  width: rem(56px);
+  height: rem(40px);
 }
 
 .menu__list {
@@ -45,14 +45,13 @@ header {
 }
 
 .menu__item {
-  margin-right: 22px;
+  margin-right: rem(22px);
   &:last-child {
     margin-right: 0;
   }
 }
 
 .menu__link {
-  // font-size: 18px;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -62,7 +61,7 @@ header {
 }
 
 .phone {
-  font-size: 22px;
+  font-size: rem(22px);
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -75,9 +74,9 @@ header {
 }
 
 .phone__icon {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: rem(12px);
+  height: rem(12px);
+  margin-right: rem(6px);
 }
 
 .hero__title-section {
@@ -86,13 +85,13 @@ header {
 
 .hero__title {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .hero__title-desc {
-  font-size: 21px;
+  font-size: rem(21px);
   color: #fff;
-  margin-bottom: 35px;
+  margin-bottom: rem(35px);
 }
 
 .features {
@@ -105,21 +104,21 @@ header {
 }
 
 .feature__item {
-  margin-right: 35px;
+  margin-right: rem(35px);
   &:last-child {
     margin-right: 0;
   }
 }
 
 .feature__icon {
-  margin-right: 15px;
-  width: 35px;
-  height: 35px;
+  margin-right: rem(15px);
+  width: rem(35px);
+  height: rem(35px);
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: rem(16px);
   color: #fff;
-  width: 90px;
+  width: rem(90px);
   font-weight: 700;
 }

@@ -52,9 +52,9 @@
 }
 
 .avatar {
-  height: 80px;
-  width: 80px;
-  border: 6px solid transparent;
+  height: rem(80px);
+  width: rem(80px);
+  border: rem(6px) solid transparent;
   border-radius: 100%;
   overflow: hidden;
   transition: .4s;
