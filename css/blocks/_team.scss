@@ -1,0 +1,32 @@
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item-photo {
+  width: 220px;
+  height: 290px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team__item-info {
+  text-align: center;
+}
+
+.team__item-place, .team__item-desc {
+  display: none;
+}
+
+.team__item-name {
+  color: #292929;
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+  &:after {
+    content: '';
+    @include css-triangle(black, up);
+    right: 5%;
+    top: 40%;
+  }
+}

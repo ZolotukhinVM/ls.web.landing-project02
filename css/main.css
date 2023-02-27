@@ -102,7 +102,7 @@ h3 {
 .fixed-menu {
   position: fixed;
   top: 50%;
-  right: 3%;
+  right: 5%;
   z-index: 100;
   transform: translateY(-50%);
 }
@@ -356,10 +356,17 @@ header {
 .map {
   background: url("./../../images/map.png") center center no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .footer {
   padding: 18px 0;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: .9;
 }
 
 .footer__container {
@@ -581,4 +588,45 @@ address {
 
 .form__buttons {
   margin-top: 20px;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item-photo {
+  width: 220px;
+  height: 290px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.team__item-info {
+  text-align: center;
+}
+
+.team__item-place, .team__item-desc {
+  display: none;
+}
+
+.team__item-name {
+  color: #292929;
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+}
+.team__item-name:after {
+  content: '';
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid black;
+  margin-bottom: -2px;
+  right: 5%;
+  top: 40%;
 }
