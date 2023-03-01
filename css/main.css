@@ -18,14 +18,16 @@ body {
 }
 
 .wrapper {
-  min-width: 55rem;
+  overflow: hidden;
+  min-width: 0px;
   height: 100%;
   width: 100%;
 }
 
 .container {
   margin: 0 auto;
-  width: 55rem;
+  width: auto;
+  max-width: 990px;
 }
 
 section {
@@ -180,6 +182,7 @@ header {
 }
 
 .logo {
+  fill: #fff;
   width: 3.1111111111rem;
   height: 2.2222222222rem;
 }
@@ -222,6 +225,10 @@ header {
   width: 0.6666666667rem;
   height: 0.6666666667rem;
   margin-right: 0.3333333333rem;
+  fill: #fff;
+}
+.phone__icon--fill--black {
+  fill: #000;
 }
 
 .hero__title-section {
@@ -335,6 +342,7 @@ header {
 }
 
 .benefit__icon {
+  fill: #000;
   position: absolute;
   width: 3.7777777778rem;
   height: 3.7777777778rem;
@@ -391,14 +399,41 @@ address {
 }
 
 .social__item {
-  width: 1.1111111111rem;
-  height: 1.1111111111rem;
   margin-right: 14px;
   display: flex;
   align-items: center;
+  transition: .5s;
 }
 .social__item:last-child {
   margin-right: 0;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.3);
+  }
+  40% {
+    transform: scale(1.5);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.social__icon {
+  width: 1.1111111111rem;
+  height: 1.1111111111rem;
+  fill: #B3B3B3;
+}
+.social__icon:hover {
+  fill: #292929;
+  animation: zoom 1s ease-in forwards;
 }
 
 .reviews-section {
@@ -630,4 +665,56 @@ address {
   margin-bottom: -2px;
   right: 5%;
   top: 40%;
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+
+  .fixed-menu,
+  .features,
+  .menu,
+  header > .phone {
+    display: none;
+  }
+
+  .header {
+    background: #1968B1;
+    padding: 1.3888888889rem 1.6666666667rem;
+  }
+
+  .hero__container {
+    padding: 0;
+  }
+
+  .hero__title-section {
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  .footer__container {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .phone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.8888888889rem;
+  }
+}
+@media (max-width: 480px) {
+  html {
+    font-size: 12px;
+  }
 }

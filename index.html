@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>SURFBOARD | 2023</title>
   <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -13,7 +13,9 @@
       <section class="hero">
         <div class="container hero__container">  
           <header class="header">
-            <img src="./images/hero/logo.svg" alt="Surfbord logo" class="logo">
+            <svg class="logo">
+              <use xlink:href="./images/sprites/sprite.svg#logo"></use>
+            </svg>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
@@ -25,10 +27,11 @@
                 <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
+
             <a href="tel:8 800 903 90 90" class="phone">
-              <span class="phone__icon">
-                <img src="./images/hero/phone.svg" alt="" class="phone__icon-img" alt="Phone number">
-              </span>
+              <svg class="phone__icon">
+                <use xlink:href="./images/sprites/sprite.svg#phone"></use>
+              </svg>
               <span class="phone__text">8 800 903 90 90</span>
             </a>
           </header>
@@ -77,7 +80,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrap">
-                  <img src="./images/why/1.svg" class="benefit__icon" alt="Benefit 1">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./images/sprites/sprite.svg#benefit-1"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -93,7 +98,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrap">
-                  <img src="./images/why/2.svg" class="benefit__icon" alt="Benefit 2">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./images/sprites/sprite.svg#benefit-2"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -108,7 +115,9 @@
             <li class="benefits__item benefit">
               <div class="benefit__img">
                 <div class="benefit__img-wrap">
-                  <img src="./images/why/3.svg" class="benefit__icon" alt="Benefit 3">
+                  <svg class="benefit__icon">
+                    <use xlink:href="./images/sprites/sprite.svg#benefit-3"></use>
+                  </svg>
                 </div>
               </div>
               <div class="benefit__text">
@@ -291,25 +300,41 @@
             <address class="footer__address">
                 Москва, ул.Новый Арбат, д.31/12 
               <a href="tel:8 800 903 90 90" class="phone phone--color--black--fw--normal">
-                <span class="phone__icon">
-                  <img src="./images/hero/phone.svg" alt="" class="phone__icon-img" alt="Phone number">
-                </span>
+                <svg class="phone__icon phone__icon--fill--black">
+                  <use xlink:href="./images/sprites/sprite.svg#phone"></use>
+                </svg>
                 <span class="phone__text">8 800 903 90 90</span>
               </a>
             </address>
             <div class="social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a href="#" class="social__item-link"><img src="./images/footer/in.svg" alt="in" class="social__item-icon"></a>
+                    <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="./images/sprites/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__item-link"><img src="./images/footer/fb.svg" alt="fb" class="social__item-icon"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="./images/sprites/sprite.svg#fb"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__item-link"><img src="./images/footer/vk.svg" alt="vk" class="social__item-icon"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="./images/sprites/sprite.svg#in"></use>
+                    </svg>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a href="#" class="social__item-link"><img src="./images/footer/tw.svg" alt="tw" class="social__item-icon"></a>
+                  <a href="#" class="social__link">
+                    <svg class="social__icon">
+                      <use xlink:href="./images/sprites/sprite.svg#tw"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
             </div>

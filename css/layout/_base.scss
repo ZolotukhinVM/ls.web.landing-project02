@@ -15,25 +15,26 @@ html {
 }
 
 body  {
-  // font: 400 18px/1.42 'Alegreya Sans', Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   margin: 0;
   height: 100%;
   width: 100%;
   color: $color-text;
-} 
+}
 
 .wrapper {
-  // overflow: hidden;
-  min-width: rem(990px);
+  overflow: hidden;
+  min-width: 0px;
   height: 100%;
   width: 100%;
+
 }
 
 .container {
   margin: 0 auto;
-  width: rem(990px);
+  width: auto;
+  max-width: 990px;
 }
 
 section {

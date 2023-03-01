@@ -30,12 +30,42 @@ address {
 }
 
 .social__item {
-  width: rem(20px);
-  height: rem(20px);
   margin-right: 14px;
   display: flex;
   align-items: center;
+  transition: .5s;
   &:last-child {margin-right: 0;}
 }
 
-// @each $social in (in, fb, vk, in) {}
+@keyframes zoom {
+  from {
+    transform: scale(1.0);
+  }
+
+  20% {
+    transform: scale(1.3);
+  }
+
+  40% {
+    transform: scale(1.5);
+  }
+
+  60% {
+    transform: scale(1.1);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.social__icon {
+  width: rem(20px);
+  height: rem(20px);
+  fill: #B3B3B3;
+  &:hover {
+    fill: $color-header;
+    animation: zoom 1s ease-in forwards;
+  }
+}
