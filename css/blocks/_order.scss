@@ -25,7 +25,7 @@
 .form__col {
   flex: 1;
   margin-right: rem(25px);
-  &:last-child {
+  &:nth-child(3) {
     margin-right: 0;
   }
 }
@@ -33,9 +33,6 @@
 .form__row {
   display: flex;
   margin-bottom: rem(12px);
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
 
 .form__block {

@@ -444,14 +444,14 @@ address {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 42px;
-  min-height: 350px;
+  padding: 2.3333333333rem;
+  min-height: 19.4444444444rem;
   background: #F8FAF9;
 }
 
 .reviews__photo {
-  width: 253px;
-  height: 260px;
+  width: 14.0555555556rem;
+  height: 14.4444444444rem;
 }
 
 .reviews__photo-elem {
@@ -462,18 +462,18 @@ address {
 
 .reviews__content {
   flex: 1;
-  padding: 40px;
+  padding: 2.2222222222rem;
 }
 
 .reviews__title {
   color: #292929;
-  font-size: 27px;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 14px;
 }
 
 .reviews__desc {
-  margin-bottom: 25px;
+  margin-bottom: 1.3888888889rem;
 }
 
 .reviews__author {
@@ -482,7 +482,7 @@ address {
 }
 
 .reviews__block {
-  margin-bottom: 15px;
+  margin-bottom: 0.8333333333rem;
 }
 
 .reviews__swither {
@@ -537,16 +537,13 @@ address {
   flex: 1;
   margin-right: 1.3888888889rem;
 }
-.form__col:last-child {
+.form__col:nth-child(3) {
   margin-right: 0;
 }
 
 .form__row {
   display: flex;
   margin-bottom: 0.6666666667rem;
-}
-.form__row:last-child {
-  margin-bottom: 0;
 }
 
 .form__block {
@@ -694,6 +691,14 @@ address {
     text-align: center;
   }
 
+  .order-container {
+    padding: 0 8.3333333333rem;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
   .footer__container {
     padding: 1rem 2rem;
   }
@@ -711,6 +716,11 @@ address {
     display: flex;
     justify-content: center;
     margin-bottom: 0.8888888889rem;
+  }
+
+  .reviews__block {
+    flex-direction: column;
+    margin: 5%;
   }
 }
 @media (max-width: 480px) {
