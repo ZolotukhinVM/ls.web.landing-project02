@@ -43,6 +43,17 @@
 .form__row {
   display: flex;
   margin-bottom: rem(12px);
+  &:nth-child(3) {
+    @include phones {
+      margin-bottom: rem(12px);
+    }
+  }
+}
+
+.form__row--center {
+  @include tablets {
+    justify-content: center;
+  }
 }
 
 .form__block {
@@ -50,18 +61,6 @@
   margin-right: rem(15px);
   &:last-child {
     margin-right: 0;
-  }
-}
-
-.form__row--center {
-  @include phones {
-    justify-content: center;
-  }
-}
-
-.form__row:last-child {
-  @include tablets {
-    justify-content: center;
   }
 }
 
@@ -92,6 +91,9 @@
   flex-wrap: wrap;
   margin-bottom: rem(20px);
   @include phones {
+    &:last-child {
+      margin-bottom: 0;
+    }
     justify-content: center; //dont work
   }
 }
