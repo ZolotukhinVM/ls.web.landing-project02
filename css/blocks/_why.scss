@@ -22,10 +22,19 @@
 
 .headline__desc {
   padding: 0 28%;
+  @include tablets {
+    padding: 0 22%;
+  }
+  @include phones {
+    padding: 0 7%;
+  }
  }
 
 .benefits {
   display: flex;
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
@@ -45,11 +54,21 @@
     top: 20%;
     right: 0;
     transform: translateX(50%);
+    @include tablets {
+      display: none;
+    }
+  }
+  @include phones {
+    padding: 0;
   }
 }
 
 .benefit {
   text-align: center;
+  @include phones {
+    display: flex;
+    text-align: left;
+  }
 }
 
 .benefit__img-wrap {
@@ -60,6 +79,9 @@
   border-radius: 50%;
   background: #F2F5F4;
   overflow: hidden;
+  @include phones {
+    margin-right: 12px;
+  }
 }
 
 .benefit__icon {

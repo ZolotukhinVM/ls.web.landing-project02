@@ -6,14 +6,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: rem(42px);
-  min-height: rem(350px);
+  padding: rem(40px);
   background: #F8FAF9;
+  margin-bottom: 3%;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
 .reviews__photo {
   width: rem(253px);
   height: rem(260px);
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__photo-elem {
@@ -25,6 +32,9 @@
 .reviews__content {
   flex: 1;
   padding: rem(40px);
+  @include tablets {
+    padding: rem(20px);
+  }
 }
 
 .reviews__title {
@@ -41,9 +51,6 @@
 .reviews__author {
   color: #292929;
   font-weight: 500;
-}
-.reviews__block {
-  margin-bottom: rem(15px);
 }
 
 .reviews__swither {

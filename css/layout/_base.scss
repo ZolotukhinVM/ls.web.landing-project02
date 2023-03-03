@@ -1,4 +1,7 @@
 $projectFontSize: 18px;
+
+//привести переменные к единному стилю
+
 $color-header: #292929;
 $color-text: #666;
 $bg-button: #FEDB3F;
@@ -6,15 +9,27 @@ $bg-cirle-color: #F2F5F4;
 $size-h1-h2: rem(48px);
 $size-h3: rem(32px);
 
+$tablets: 768px;
+$phones: 480px;
+$miniphones: 320px;
+
 * {
   box-sizing: border-box;
 }
 
 html {
-  font: 400 18px/1.42 'Alegreya Sans', Helvetica, sans-serif;
-}
+  font-size: $projectFontSize;
+  @include tablets {
+    font-size: $projectFontSize - 1px;
+  } 
+  @include phones {
+    font-size: $projectFontSize - 2px;
+  }
+} 
 
 body  {
+  font-family: 'Alegreya Sans', Helvetica, sans-serif;
+  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   margin: 0;
@@ -28,12 +43,11 @@ body  {
   min-width: 0px;
   height: 100%;
   width: 100%;
-
 }
 
 .container {
   margin: 0 auto;
-  width: auto;
+  width: 95%;
   max-width: 990px;
 }
 
@@ -70,6 +84,9 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: $size-h1-h2;
+  @include miniphones {
+    font-size: rem(32px);
+  }
 } 
 
 h2 {

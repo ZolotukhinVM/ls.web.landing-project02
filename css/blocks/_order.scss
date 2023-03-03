@@ -20,12 +20,19 @@
 .form {
   display: flex;
   color: #fff;
+  @include tablets {
+    flex-direction: column;
+    padding: 0 15%;
+  }
 }
 
 .form__col {
   flex: 1;
   margin-right: rem(25px);
   &:nth-child(3) {
+    margin-right: 0;
+  }
+  @include tablets {
     margin-right: 0;
   }
 }
@@ -43,6 +50,13 @@
   }
 }
 
+.form__row:last-child {
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .form__input {
   width: 100%;
   border: none;
@@ -51,10 +65,17 @@
   &--textarea {
     height: rem(152px);
     resize: none;
+
+    @include tablets {
+      height: rem(80px);
+    }
   }
   &:focus {
     border-color: $bg-button;
     outline: none;
+  }
+  @include tablets {
+    padding: rem(9px) rem(6px);
   }
 }
 

@@ -13,6 +13,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.footer .phone {
+  @include phones {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
 }
 
 .footer__address {

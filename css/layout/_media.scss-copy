@@ -1,0 +1,50 @@
+@media (max-width: 992px) {
+  html {font-size: 16px;}
+  .fixed-menu,
+  .features,
+  .menu,
+  header > .phone
+  {display: none;}
+  .header {
+    background: #1968B1;
+    padding: rem(25px) rem(30px);
+  } 
+  .hero__container {
+    padding: 0;
+  } 
+  .hero__title-section {
+      width: 100%;
+      padding: 0 10%;
+      text-align: center;
+    }
+
+  .order-container {
+    padding: 0 5%;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .footer__container {
+    // padding: rem(18px) rem(36px);
+  }
+}
+
+@media (max-width: 768px) {
+  html {font-size: 14px;}
+  .footer__container {
+    flex-direction: column;
+  }
+  .phone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(18px);
+  }
+  .reviews__block {
+    flex-direction: column;
+    margin: 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {font-size: 12px;}
+}
