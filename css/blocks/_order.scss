@@ -24,6 +24,9 @@
     flex-direction: column;
     padding: 0 15%;
   }
+  @include phones {
+    padding: 0;
+  }
 }
 
 .form__col {
@@ -50,9 +53,14 @@
   }
 }
 
+.form__row--center {
+  @include phones {
+    justify-content: center;
+  }
+}
+
 .form__row:last-child {
   @include tablets {
-    display: flex;
     justify-content: center;
   }
 }
@@ -83,13 +91,16 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: rem(20px);
+  @include phones {
+    justify-content: center; //dont work
+  }
 }
 
 .radio {
   margin-right: rem(15px);
   display: flex;
   cursor: pointer;
-  user-select: none; //dont work why?
+  user-select: none; //dont work
   &:last-child {
     margin-right: 0;
   }

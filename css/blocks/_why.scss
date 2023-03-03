@@ -80,7 +80,7 @@
   background: #F2F5F4;
   overflow: hidden;
   @include phones {
-    margin-right: 12px;
+    margin-right: rem(12px);
   }
 }
 
