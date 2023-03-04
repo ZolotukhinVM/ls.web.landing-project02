@@ -98,7 +98,8 @@
   margin-right: rem(15px);
   display: flex;
   cursor: pointer;
-  user-select: none; //dont work
+  user-select: none;
+  -webkit-user-select: none;
   &:last-child {
     margin-right: 0;
   }

@@ -2,8 +2,7 @@
   background: url("./../images/hero/bg.jpeg") center center no-repeat;
   background-size: cover;
   background-color: silver;
-  position: relative;
-
+  position: relative; 
   &:after{
     content: "";
     position: absolute;

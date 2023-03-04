@@ -24,9 +24,9 @@ html {
   } 
   @include phones {
     font-size: $projectFontSize - 2px;
+    width: 100%;
+    height: 100%;
   }
-  width: 100%;
-  height: 100%;
 } 
 
 body  {
@@ -36,25 +36,33 @@ body  {
   -moz-osx-smoothing: grayscale;
   margin: 0;
   color: $color-text;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
-  // overflow: hidden;
-  overflow-x: hidden;
+  overflow: hidden;
   min-width: 0px;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
+
+
+.maincontent {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
 
 .container {
   margin: 0 auto;
   width: 95%;
   max-width: 990px;
-}
-
-section {
-  width: 100vw;
-  height: 100vh;
 }
 
 a {

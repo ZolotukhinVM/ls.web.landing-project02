@@ -6,8 +6,6 @@
 
 html {
   font-size: 18px;
-  width: 100%;
-  height: 100%;
 }
 @media screen and (max-width: 768px) {
   html {
@@ -17,6 +15,8 @@ html {
 @media screen and (max-width: 480px) {
   html {
     font-size: 16px;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -27,24 +27,31 @@ body {
   -moz-osx-smoothing: grayscale;
   margin: 0;
   color: #666;
+  width: 100%;
+  height: 100%;
 }
 
 .wrapper {
-  overflow-x: hidden;
+  overflow: hidden;
   min-width: 0px;
-  height: 100%;
   width: 100%;
+  height: 100%;
+}
+
+.maincontent {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 100%;
 }
 
 .container {
   margin: 0 auto;
   width: 95%;
   max-width: 990px;
-}
-
-section {
-  width: 100vw;
-  height: 100vh;
 }
 
 a {
@@ -712,6 +719,7 @@ h3 {
   display: flex;
   cursor: pointer;
   user-select: none;
+  -webkit-user-select: none;
 }
 .radio:last-child {
   margin-right: 0;
