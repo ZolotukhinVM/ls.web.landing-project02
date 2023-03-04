@@ -35,6 +35,11 @@
   @include tablets {
     padding: rem(20px);
   }
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .reviews__title {

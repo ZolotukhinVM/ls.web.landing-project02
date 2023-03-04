@@ -6,6 +6,9 @@
   display: none;
   @include tablets {
     display: inline-flex;
+    position: fixed;
+    top: 4%;
+    right: 5%;
   }
 }
 

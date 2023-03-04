@@ -4,8 +4,8 @@
   &:before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: #000;
     opacity: .7;
     z-index: 1;
@@ -32,8 +32,9 @@
 .form__col {
   flex: 1;
   margin-right: rem(25px);
-  &:nth-child(3) {
-    margin-right: 0;
+  margin-bottom: rem(12px);
+  &:last-child {
+    margin-bottom: 0;
   }
   @include tablets {
     margin-right: 0;
@@ -43,16 +44,11 @@
 .form__row {
   display: flex;
   margin-bottom: rem(12px);
-  &:nth-child(3) {
-    @include phones {
-      margin-bottom: rem(12px);
+  &:last-child {
+    margin-bottom: 0;
+    @include tablets {
+      justify-content: center;
     }
-  }
-}
-
-.form__row--center {
-  @include tablets {
-    justify-content: center;
   }
 }
 
@@ -91,10 +87,10 @@
   flex-wrap: wrap;
   margin-bottom: rem(20px);
   @include phones {
+    justify-content: center; //dont work
     &:last-child {
       margin-bottom: 0;
     }
-    justify-content: center; //dont work
   }
 }
 

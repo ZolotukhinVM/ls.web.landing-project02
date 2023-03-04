@@ -25,6 +25,8 @@ html {
   @include phones {
     font-size: $projectFontSize - 2px;
   }
+  width: 100%;
+  height: 100%;
 } 
 
 body  {
@@ -33,13 +35,12 @@ body  {
   -webkit-font-smoothing: antialiased;
   -moz-osx-smoothing: grayscale;
   margin: 0;
-  height: 100%;
-  width: 100%;
   color: $color-text;
 }
 
 .wrapper {
-  overflow: hidden;
+  // overflow: hidden;
+  overflow-x: hidden;
   min-width: 0px;
   height: 100%;
   width: 100%;
