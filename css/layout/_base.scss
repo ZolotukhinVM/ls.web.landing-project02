@@ -24,8 +24,6 @@ html {
   } 
   @include phones {
     font-size: $projectFontSize - 2px;
-    width: 100%;
-    height: 100%;
   }
 } 
 
@@ -41,23 +39,16 @@ body  {
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow-x: hidden;
   min-width: 0px;
   width: 100%;
   height: 100%;
 }
 
-
-.maincontent {
-  width: 100%;
-  height: 100%;
-}
-
 section {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
-
 
 .container {
   margin: 0 auto;

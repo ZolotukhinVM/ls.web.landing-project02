@@ -41,11 +41,10 @@
   flex: 1;
   padding: 0 3%;
   position: relative;
-  margin-bottom: rem(30px);
+
   &:first-child {padding-left: 0;}
   &:last-child {
     padding-right: 0;
-    margin-bottom: 0;
     &:before {
       display: none;
     }
@@ -61,7 +60,11 @@
     }
   }
   @include phones {
+    margin-bottom: rem(30px);
     padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
