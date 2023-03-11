@@ -5,17 +5,33 @@
   justify-content: space-between;
   display: none;
   cursor: pointer;
+  &__plank {
+    display: block;
+    background: #fff;
+    height: 4px;
+    border-radius: 10px;
+    transition: .4s;
+  }
+  &--active { 
+    .hamburger__plank {
+      &:nth-child(1){
+        opacity:0;
+      }
+      
+      &:nth-child(2){
+        transform:rotate(45deg);
+      }
+      
+      &:nth-child(3){
+        transform:rotate(-45deg) translateY(-6px) translateX(5px);
+      }
+    }
+  }
   @include tablets {
     display: inline-flex;
     position: fixed;
     top: 4%;
     right: 5%;
+    z-index: 100;
   }
-}
-
-.hamburger__plank {
-  display: block;
-  background: #fff;
-  height: 4px;
-  border-radius: 10px;
 }
