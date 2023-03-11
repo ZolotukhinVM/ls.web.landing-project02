@@ -16,7 +16,7 @@
             <svg class="logo">
               <use xlink:href="./images/sprites/sprite.svg#logo"></use>
             </svg>
-            <nav class="menu">
+            <nav class="menu horizontal--menu">
               <ul class="menu__list">
                 <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
                 <li class="menu__item"><a href="#catalog" class="menu__link">Серфборды</a></li>
@@ -40,6 +40,7 @@
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
             </a>
+
           </header>
 
           <div class="hero__title-section">
@@ -140,12 +141,17 @@
       </section>
 
       <section class="section catalog">
-        <div class="container">
+        <div class="container catalog__container">
+          <div class="catalog__arrows">
+            <a href="#" class="catalog__arrow catalog__arrow--prev">
+              <img src="./images/catalog/arrow-prev.svg" alt="Prev">
+            </a>  
+            <a href="#" class="catalog__arrow catalog__arrow--next">
+              <img src="./images/catalog/arrow-next.svg" alt="Next">
+            </a>
+          </div>
           <ul class="catalog__list">
             <li class="catalog__item slider">
-              <div class="catalog__col">
-                <a href="#" class="slider__prev"><</a>
-              </div>
               <div class="catalog__col">
                 <div class="catalog__content">
                   <div class="catalog__photo">
@@ -227,9 +233,6 @@
                     </div>
                   </div >
                 </div>
-              </div>
-              <div class="catalog__col">
-                <a href="#" class="slider__next">></a>
               </div>
             </li>
           </ul>
@@ -461,6 +464,35 @@
     </ul>
   </nav>
 
-
+  <div class="overlay">
+      <nav class="menu menu--vertical">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
+          <li class="menu__item"><a href="#catalog" class="menu__link">Серфборды</a></li>
+          <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
+          <li class="menu__item"><a href="#menu" class="menu__link">Меню</a></li>
+          <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
+          <li class="menu__item"><a href="#work" class="menu__link">Как мы работаем</a></li>
+          <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+        </ul>
+      </nav>
+  </div>
+<script>
+  let burger  = document.querySelector('.hamburger');
+  let overlay = document.querySelector('.overlay');
+  let body = document.querySelector('body');
+  let links = document.querySelectorAll('.menu__link');
+  
+  links.forEach(function(e){
+    e.addEventListener('click' , toggleMenu);
+  })
+  
+  function toggleMenu(){
+    burger.classList.toggle('burger--active');
+    overlay.classList.toggle('overlay--active');
+    body.classList.toggle('body--active-menu');
+  }
+  burger.addEventListener('click', toggleMenu);
+</script>
 </body>
 </html>
