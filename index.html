@@ -160,43 +160,43 @@
                       </svg>
                       <div class="catalog__dropdown-text">Параметры</div>
                     </a>
-                    <div class="catalog__dropdown-modal modal">
-                      <div class="modal__row">
+                    <ul class="catalog__dropdown-modal modal">
+                      <li class="modal__row">
                         <svg class="modal__icon">
                           <use xlink:href="./images/sprites/sprite.svg#modal-1"></use>
                         </svg>
                         <div class="modal__info">Длина доски</div>
                         <div class="modal__value">от 2,5 м</div>
-                      </div>
-                      <div class="modal__row">
+                      </li>
+                      <li class="modal__row">
                         <svg class="modal__icon icon-2">
                           <use xlink:href="./images/sprites/sprite.svg#modal-1"></use>
                         </svg>
                         <div class="modal__info">Длина доски</div>
                         <div class="modal__value">от 2,5 м</div>
-                      </div>
-                      <div class="modal__row">
+                      </li>
+                      <li class="modal__row">
                         <svg class="modal__icon">
                           <use xlink:href="./images/sprites/sprite.svg#modal-3"></use>
                         </svg>
                         <div class="modal__info">Длина доски</div>
                         <div class="modal__value">от 2,5 м</div>
-                      </div>
-                      <div class="modal__row">
+                      </li>
+                      <li class="modal__row">
                         <svg class="modal__icon">
                           <use xlink:href="./images/sprites/sprite.svg#modal-4"></use>
                         </svg>
                         <div class="modal__info">Длина доски</div>
                         <div class="modal__value">от 2,5 м</div>
-                      </div>
-                      <div class="modal__row">
+                      </li>
+                      <li class="modal__row">
                         <svg class="modal__icon">
                           <use xlink:href="./images/sprites/sprite.svg#modal-5"></use>
                         </svg>
                         <div class="modal__info">Длина доски</div>
                         <div class="modal__value">от 2,5 м</div>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
   
                   <h3 class="catalog__title">Лонгборд 2.0</h3>
@@ -477,28 +477,6 @@
         </ul>
       </nav>
   </div>
-
-<script>
-
-  let burger  = document.querySelector('.hamburger');
-  let overlay = document.querySelector('.overlay');
-  let links = document.querySelectorAll('.menu--vertical .menu__link');
-  let body = document.body;
-  
-  function toggleMenu(e){
-    e.preventDefault();
-    burger.classList.toggle('hamburger--active');
-    overlay.classList.toggle('overlay--active');
-    body.classList.toggle('body--active-menu');
-  }
-
-  links.forEach(function(e){
-    e.addEventListener('click' , toggleMenu);
-  })
-  
-  burger.addEventListener('click', toggleMenu);
-  
-</script>
-
+  <script src="./js/menu-modal.js"></script>
 </body>
 </html>

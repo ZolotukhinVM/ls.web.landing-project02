@@ -30,8 +30,8 @@
   @include tablets {
     display: inline-flex;
     position: fixed;
-    top: 4%;
-    right: 5%;
+    top: rem(35px);
+    right: rem(30px);
     z-index: 100;
   }
 }

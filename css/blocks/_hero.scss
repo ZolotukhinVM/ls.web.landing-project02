@@ -125,6 +125,12 @@
   flex-direction: column;
 }
 
+.menu--vertical .menu__item {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .body--active-menu{
   overflow:hidden;
 }

@@ -197,8 +197,8 @@ h3 {
   .hamburger {
     display: inline-flex;
     position: fixed;
-    top: 4%;
-    right: 5%;
+    top: 1.9444444444rem;
+    right: 1.6666666667rem;
     z-index: 100;
   }
 }
@@ -333,6 +333,10 @@ h3 {
 .menu--vertical .menu__list {
   display: flex;
   flex-direction: column;
+}
+
+.menu--vertical .menu__item:last-child {
+  margin-bottom: 0;
 }
 
 .body--active-menu {
@@ -562,18 +566,14 @@ h3 {
 }
 
 .catalog__arrow {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
   width: 30px;
   height: 30px;
   fill: #000;
 }
 
-.catalog__arrow--next,
-.catalog__arrow--prev {
-  fill: black;
-  position: absolute;
-  top: 50%;
-  z-index: 50;
-}
 @media screen and (max-width: 768px) {
   .catalog__arrow--next,
   .catalog__arrow--prev {
