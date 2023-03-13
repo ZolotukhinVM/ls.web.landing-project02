@@ -10,40 +10,27 @@
   display: flex;
 }
 
-.catalog__arrow {
+.catalog__arrows {
   position: absolute;
-  z-index: 50;
   top: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 50;
+  @include tablets {
+    top: 25%;
+    padding: 0 rem(100px);
+  }
+  @include phones {
+    padding: 0;
+  }
+}
+
+.catalog__arrow {
   width: 30px;
   height: 30px;
   fill: #000;
-}
-
-.catalog__arrow--next,
-.catalog__arrow--prev {
-  @include tablets {
-    top: 25%;
-  }
-}
-
-.catalog__arrow--prev {
-    left: 0;
-  @include tablets {
-    left: 20%;
-  }
-  @include phones {
-    left: 5%;
-  }
-}
-
-.catalog__arrow--next {
-  right: 0;
-  @include tablets {
-    right: 20%;
-  }
-  @include phones {
-    right: 5%;
-  }
 }
 
 .catalog__col {
