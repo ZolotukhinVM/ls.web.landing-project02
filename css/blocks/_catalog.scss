@@ -20,10 +20,25 @@
   z-index: 50;
   @include tablets {
     top: 25%;
-    padding: 0 rem(100px);
   }
+}
+
+.catalog__arrow--prev {
+  @include tablets {
+    transform: translateX(rem(100px));
+  }
+}
+
+.catalog__arrow--next {
+  @include tablets {
+    transform: translateX(rem(-100px));
+  }
+}
+
+.catalog__arrow--prev,
+.catalog__arrow--next {
   @include phones {
-    padding: 0;
+    transform: translateX(0);
   }
 }
 

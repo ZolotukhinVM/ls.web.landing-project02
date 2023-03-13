@@ -577,12 +577,25 @@ h3 {
 @media screen and (max-width: 768px) {
   .catalog__arrows {
     top: 25%;
-    padding: 0 5.5555555556rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .catalog__arrow--prev {
+    transform: translateX(5.5555555556rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .catalog__arrow--next {
+    transform: translateX(-5.5555555556rem);
+  }
+}
+
 @media screen and (max-width: 480px) {
-  .catalog__arrows {
-    padding: 0;
+  .catalog__arrow--prev,
+  .catalog__arrow--next {
+    transform: translateX(0);
   }
 }
 
