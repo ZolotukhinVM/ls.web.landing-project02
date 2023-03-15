@@ -114,10 +114,12 @@
   justify-content: center;
   opacity: 0;
   transition: .4s;
-  &--active {
-    left: 0;
-    opacity: .98;
-  }
+}
+
+.overlay-menu--active,
+.overlay-form--active {
+  left: 0;
+  opacity: .98;
 }
 
 .menu--vertical .menu__list {
@@ -131,7 +133,7 @@
   }
 }
 
-.body--active-menu{
+.body--active-menu {
   overflow:hidden;
 }
 

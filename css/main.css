@@ -325,7 +325,9 @@ h3 {
   opacity: 0;
   transition: .4s;
 }
-.overlay--active {
+
+.overlay-menu--active,
+.overlay-form--active {
   left: 0;
   opacity: .98;
 }
@@ -577,30 +579,16 @@ h3 {
 @media screen and (max-width: 768px) {
   .catalog__arrows {
     top: 25%;
+    padding: 0 5.5555555556rem;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .catalog__arrow--prev {
-    transform: translateX(5.5555555556rem);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .catalog__arrow--next {
-    transform: translateX(-5.5555555556rem);
-  }
-}
-
 @media screen and (max-width: 480px) {
-  .catalog__arrow--prev,
-  .catalog__arrow--next {
-    transform: translateX(0);
+  .catalog__arrows {
+    padding: 0 0.5555555556rem;
   }
 }
 
 .catalog__arrow {
-  width: 30px;
   height: 30px;
   fill: #000;
 }
@@ -976,6 +964,9 @@ h3 {
   padding: 1rem 0.6666666667rem;
   border: 0.1666666667rem solid transparent;
 }
+.form__input--error {
+  border-color: #ff0000;
+}
 .form__input--textarea {
   height: 8.4444444444rem;
   resize: none;
@@ -1056,6 +1047,23 @@ h3 {
 
 .form__buttons {
   margin-top: 1.1111111111rem;
+}
+
+.message {
+  width: 17.2222222222rem;
+  height: 9.7777777778rem;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message__info {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .team__list {

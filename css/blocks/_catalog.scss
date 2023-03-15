@@ -20,30 +20,36 @@
   z-index: 50;
   @include tablets {
     top: 25%;
+    padding: 0 rem(100px);
   }
-}
-
-.catalog__arrow--prev {
-  @include tablets {
-    transform: translateX(rem(100px));
-  }
-}
-
-.catalog__arrow--next {
-  @include tablets {
-    transform: translateX(rem(-100px));
-  }
-}
-
-.catalog__arrow--prev,
-.catalog__arrow--next {
   @include phones {
-    transform: translateX(0);
+    padding: 0 rem(10px);
   }
 }
+
+// Вариант с transform: translateX 
+
+// .catalog__arrow--prev {
+//   @include tablets {
+//     transform: translateX(rem(100px));
+//   }
+// }
+
+// .catalog__arrow--next {
+//   @include tablets {
+//     transform: translateX(rem(-100px));
+//   }
+// }
+
+// .catalog__arrow--prev,
+// .catalog__arrow--next {
+//   @include phones {
+//     transform: translateX(0);
+//   }
+// }
 
 .catalog__arrow {
-  width: 30px;
+  // width: 30px;
   height: 30px;
   fill: #000;
 }

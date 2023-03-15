@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>SURFBOARD | 2023</title>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/slider/slick.css">
+  <link rel="stylesheet" href="./css/slider/slick-theme.css">
 </head>
 <body>
   <div class="wrapper">
@@ -229,6 +231,90 @@
                 </div>
               </div>
             </li>
+            <li class="catalog__item slider">
+              <div class="catalog__col">
+                <div class="catalog__content">
+                  <div class="catalog__photo">
+                    <img src="./images/catalog/2.png" class="catalog__photo-elem" alt="Лонгборд 2.0">
+                  </div>
+                </div>
+                <div class="catalog__content">
+                  <div class="catalog__dropdown">
+                    <a href="#" class="catalog__dropdown-link">
+                      <svg class="catalog__dropdown-icon">
+                        <use xlink:href="./images/sprites/sprite.svg#param"></use>
+                      </svg>
+                      <div class="catalog__dropdown-text">Параметры</div>
+                    </a>
+                    <ul class="catalog__dropdown-modal modal">
+                      <li class="modal__row">
+                        <svg class="modal__icon">
+                          <use xlink:href="./images/sprites/sprite.svg#modal-1"></use>
+                        </svg>
+                        <div class="modal__info">Длина доски</div>
+                        <div class="modal__value">от 2,5 м</div>
+                      </li>
+                      <li class="modal__row">
+                        <svg class="modal__icon icon-2">
+                          <use xlink:href="./images/sprites/sprite.svg#modal-1"></use>
+                        </svg>
+                        <div class="modal__info">Длина доски</div>
+                        <div class="modal__value">от 2,5 м</div>
+                      </li>
+                      <li class="modal__row">
+                        <svg class="modal__icon">
+                          <use xlink:href="./images/sprites/sprite.svg#modal-3"></use>
+                        </svg>
+                        <div class="modal__info">Длина доски</div>
+                        <div class="modal__value">от 2,5 м</div>
+                      </li>
+                      <li class="modal__row">
+                        <svg class="modal__icon">
+                          <use xlink:href="./images/sprites/sprite.svg#modal-4"></use>
+                        </svg>
+                        <div class="modal__info">Длина доски</div>
+                        <div class="modal__value">от 2,5 м</div>
+                      </li>
+                      <li class="modal__row">
+                        <svg class="modal__icon">
+                          <use xlink:href="./images/sprites/sprite.svg#modal-5"></use>
+                        </svg>
+                        <div class="modal__info">Длина доски</div>
+                        <div class="modal__value">от 2,5 м</div>
+                      </li>
+                    </ul>
+                  </div>
+  
+                  <h3 class="catalog__title">Шортборд</h3>
+  
+                  <div class="catalog__info">
+                    <div class="catalog__desc">
+                      <p>
+                        Самые быстрые доски для профессионалов. Размеры шортбордов позволяют быстро набирать скорость, делать различные трюки на волне, включая резкие повороты и развороты, флоатеры (проезды по самому гребню волны), различные прыжки с вращениями или без, а также катание в трубах.
+                      </p>
+                    </div>
+                    <div class="catalog__param">
+                      <div class="catalog__param-elem">
+                        <div class="catalog__param-title">Длина доски</div>
+                        <div class="catalog__param-value">от 1.5 метров</div>
+                      </div>
+                      <div class="catalog__param-elem">
+                        <div class="catalog__param-title">Ширина доски</div>
+                        <div class="catalog__param-value">от 40 сантиметров</div>
+                      </div>
+                    </div>
+                    <div class="catalog__order">
+                      <div class="catalog__order-price">
+                        12000 &#8381;
+                      </div>
+                      <div class="catalog__order-btn">
+                        <a href="#" class="button">Заказать</a>
+                      </div>
+                    </div>
+                  </div >
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -321,11 +407,11 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Имя</div>
-                  <input type="text" class="form__input">
+                  <input type="text" name="name" class="form__input" required>
                 </label>
                 <label class="form__block">
                   <div class="form__title">Телефон</div>
-                  <input type="text" class="form__input">
+                  <input type="tel" name="phone" class="form__input" required>
                 </label>
               </div>
               <div class="form__row">
@@ -357,7 +443,7 @@
               <div class="form__row">
                 <label class="form__block">
                   <div class="form__title">Комментарий</div>
-                  <textarea class="form__input form__input--textarea"></textarea>
+                  <textarea class="form__input form__input--textarea" name="comment" required></textarea>
                 </label>
               </div>
               <div class="form__row">
@@ -385,7 +471,7 @@
               </div>
               <div class="form__row">
                 <div class="form__buttons">
-                  <input type="submit" value="Заказать" class="button">
+                  <input type="submit" value="Заказать" class="button" id="send">
                   <input type="reset" value="Очистить" class="button button--theme--transparent">
                 </div>
               </div>
@@ -464,7 +550,7 @@
     <span class="hamburger__plank"></span>
   </a>
 
-  <div class="overlay">
+  <div class="overlay overlay-menu">
       <nav class="menu menu--vertical">
         <ul class="menu__list">
           <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
@@ -477,6 +563,19 @@
         </ul>
       </nav>
   </div>
+
+  <div class="overlay overlay-form">
+    <div class="message">
+      <div class="message__info"></div>
+      <a href="#" class="button btn-form">Закрыть</a>
+    </div>
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/form.js"></script>
   <script src="./js/menu-modal.js"></script>
 </body>
 </html>

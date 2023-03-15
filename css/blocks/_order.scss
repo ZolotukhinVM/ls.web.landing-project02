@@ -65,6 +65,9 @@
   border: none;
   padding: rem(18px) rem(12px);
   border: rem(3px) solid transparent;
+  &--error {
+    border-color: #ff0000;
+  }
   &--textarea {
     height: rem(152px);
     resize: none;
@@ -73,6 +76,7 @@
       height: rem(80px);
     }
   }
+
   &:focus {
     border-color: $bg-button;
     outline: none;
@@ -146,4 +150,21 @@
 
 .form__buttons {
   margin-top: rem(20px);
+}
+
+.message {
+  width: rem(310px);
+  height: rem(176px);
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.message__info {
+  color: #000;
+  font-weight: 500;
+  margin-bottom: rem(18px);
 }
