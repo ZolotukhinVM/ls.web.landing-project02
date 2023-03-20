@@ -17,8 +17,8 @@ send.addEventListener('click', event => {
     const xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.setRequestHeader('content-type', 'application/json');
     xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+    console.log(data);
     xhr.send(JSON.stringify(data));
     xhr.addEventListener('load', () => {
       let messageText = (xhr.status <= 400) ? xhr.response.message : "Ошибка";

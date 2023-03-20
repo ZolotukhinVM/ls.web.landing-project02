@@ -319,51 +319,61 @@
         </div>
       </section>
 
-      <!--section class="seciton team-section">
+      <section class="section team-section">
         <div class="container">
           <h2 class="section__title">Команда</h2>
             <ul class="team__list">
               <li class="team__item">
                 <img src="./images/team/1.jpeg" alt="Team 1" class="team__item-photo">
-                <div class="team__item-info">
-                  <div class="team__item-name">Борис Федорович</div>
-                  <div class="team__item-place">Спортсмен</div>
-                  <div class="team__item-desc">Участвует в разработке верфбордов</div>
+                <a href="#" class="team__item-name">Борис Федорович</a>
+                
+                <div class="team__content">
+                  <div class="team__item-info">
+                    <div class="team__item-place">Спортсмен</div>
+                    <div class="team__item-desc">Участвует в разработке верфбордов</div>
+                  </div>
                 </div>
               </li>
               <li class="team__item">
                 <img src="./images/team/2.jpg" alt="Team 2" class="team__item-photo">
-                <div class="team__item-info">
-                  <div class="team__item-name">Борис Федорович</div>
-                  <div class="team__item-place">Спортсмен</div>
-                  <div class="team__item-desc">Участвует в разработке верфбордов</div>
-                </div>
+                <a href="#" class="team__item-name">Борис Федорович</a>
+                <div class="team__content">
+                  <div class="team__item-info">
+                    <div class="team__item-place">Спортсмен</div>
+                    <div class="team__item-desc">Участвует в разработке верфбордов</div>
+                  </div>
+                </div >
               </li>
               <li class="team__item">
                 <img src="./images/team/3.jpg" alt="Team 3" class="team__item-photo">
-                  <div class="team__item-info">
-                    <div class="team__item-name">Борис Федорович</div>
-                    <div class="team__item-place">Спортсмен</div>
-                    <div class="team__item-desc">Участвует в разработке верфбордов</div>
-                </div>
+                <a href="#" class="team__item-name">Борис Федорович</a>
+                  <div class="team__content">
+                    <div class="team__item-info">
+                      <div class="team__item-place">Спортсмен</div>
+                      <div class="team__item-desc">Участвует в разработке верфбордов</div>
+                  </div>
+                  </div>
               </li>
               <li class="team__item">
-                <img src="./images/team/4.jpg" alt="Team 4" class="team__item-photo">
-                <div class="team__item-info">
-                  <div class="team__item-name">Борис Федорович</div>
-                  <div class="team__item-place">Спортсмен</div>
-                  <div class="team__item-desc">Участвует в разработке верфбордов</div>
-                </div>
+                <img src="./images/team/4.jpg" alt="Team 3" class="team__item-photo">
+                <a href="#" class="team__item-name">Борис Федорович</a>
+                  <div class="team__content">
+                    <div class="team__item-info">
+                      <div class="team__item-place">Спортсмен</div>
+                      <div class="team__item-desc">Участвует в разработке верфбордов</div>
+                  </div>
+                  </div>
               </li>
             </ul>
         </div>
-      </section-->
+      </section>
 
       <section class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
-             <div class="reviews__block">
+            <ul class="reviews__list">
+             <li class="reviews__block reviews__block--active" data-item="1"> 
               <div class="reviews__photo">
                 <img src="./images/reviews/1.png" alt="Photo" class="reviews__photo-elem">
               </div>
@@ -376,25 +386,59 @@
                 </div>
                 <div class="reviews__author">Ольга Макарова</div>
               </article>
-            </div>
+            </li>
+
+            <li class="reviews__block" data-item="2"> 
+              <div class="reviews__photo">
+                <img src="./images/reviews/2.jpg" alt="Photo" class="reviews__photo-elem">
+              </div>
+              <article class="reviews__content">
+                <div class="reviews__title">Новый отзыв</div>
+                <div class="reviews__desc">
+                  <p>
+                    Я занимаюсь профессиональным спортом. Доверил изготовление доски для соревнований ребятам из Surfboard и не пожалел: 1 место на соревнованиях. 
+                    Нереальная скорость, устойчивая, удобная и легкая: всё что нужно для победы на соревнованиях!
+                  </p>
+                </div>
+                <div class="reviews__author">Марк Брюлов</div>
+              </article>
+            </li>
+
+            <li class="reviews__block" data-item="3"> 
+              <div class="reviews__photo">
+                <img src="./images/reviews/3.jpg" alt="Photo" class="reviews__photo-elem">
+              </div>
+              <article class="reviews__content">
+                <div class="reviews__title">Кайф</div>
+                <div class="reviews__desc">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero hic iure optio esse corrupti unde cumque, pariatur omnis fuga molestiae dolore, repudiandae ullam, sapiente nostrum. Consectetur ullam perspiciatis illum esse?
+                  </p>
+                </div>
+                <div class="reviews__author">Иван Иванов</div>
+              </article>
+            </li>
+
+          </ul>
 
             <ul class="reviews__swither">
               <li class="reviews__switcher-item avatar avatar--active">
-                <a href="#" class="avatar__link">
+                <a href="#" data-open="1" class="avatar__link">
                   <img src="./images/reviews/1.png" alt="Author 1" class="avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item avatar">
-                <a href="#" class="avatar__link">
+                <a href="#" data-open="2" class="avatar__link">
                   <img src="./images/reviews/2.jpg" alt="Author 2" class="avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item avatar">
-                <a href="#" class="avatar__link">
+                <a href="#" data-open="3" class="avatar__link">
                   <img src="./images/reviews/3.jpg" alt="Author 3" class="avatar__img">
                 </a>
               </li>
             </ul>
+
           </div>
         </div>
       </section>
@@ -577,5 +621,7 @@
   <script src="./js/slider.js"></script>
   <script src="./js/form.js"></script>
   <script src="./js/menu-modal.js"></script>
+  <script src="./js/reviews.js"></script>
+  <script src="./js/team.js"></script>
 </body>
 </html>
