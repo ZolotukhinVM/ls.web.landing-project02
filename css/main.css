@@ -795,8 +795,6 @@ h3 {
 }
 
 .map {
-  background: url("./../images/map.png") center center no-repeat;
-  background-size: cover;
   position: relative;
 }
 
@@ -1167,6 +1165,7 @@ h3 {
   bottom: 0;
   left: 0;
   opacity: .9;
+  z-index: 9999;
 }
 
 .footer__container {
