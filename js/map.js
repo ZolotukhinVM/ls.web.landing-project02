@@ -7,25 +7,25 @@ const init = () => {
     controls: []
   })
 
-const coords = [
-  [55.895681, 37.423132] 
-];
+  const coords = [
+    [55.895681, 37.423132] 
+  ];
 
-const myCollection = new ymaps.GeoObjectCollection({},{
-  draggable: false,
-  iconLayout: 'default#image',
-  iconImageHref: './images/map/marker.svg',
-  iconImageSize: [58, 73],
-  iconImageOffset: [-30, -75]
-})
+  const myCollection = new ymaps.GeoObjectCollection({},{
+    draggable: false,
+    iconLayout: 'default#image',
+    iconImageHref: './images/map/marker.svg',
+    iconImageSize: [58, 73],
+    iconImageOffset: [-30, -75]
+  })
 
-coords.forEach(coord => {
-  myCollection.add(new ymaps.Placemark(coord))
-})
+  coords.forEach(coord => {
+    myCollection.add(new ymaps.Placemark(coord))
+  })
 
-myMap.behaviors.disable('scrollZoom');
+  myMap.behaviors.disable('scrollZoom');
 
-myMap.geoObjects.add(myCollection);
+  myMap.geoObjects.add(myCollection);
 
 }
 

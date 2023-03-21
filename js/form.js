@@ -15,23 +15,34 @@ send.addEventListener('click', event => {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-    xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
-    xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-    console.log(data);
+    xhr.responseType = "json";
+    xhr.open("POST", "https://webdev-api.loftschool.com/sendmail");
+    xhr.setRequestHeader("content-type", "application/json");
     xhr.send(JSON.stringify(data));
-    xhr.addEventListener('load', () => {
-      let messageText = (xhr.status <= 400) ? xhr.response.message : "Ошибка";
-      console.log(xhr.status);
+
+    let messageText = "";
+
+    function showModal (messageText = "Ошибка сервера") {
       message.textContent = messageText;
-      overlayForm.classList.add('overlay-form--active');
-      document.body.classList.add('body--active-menu');
-      btnClose.addEventListener('click', (e) => {
+      overlayForm.classList.add("overlay-form--active");
+      document.body.classList.add("body--active-menu");
+      btnClose.addEventListener("click", (e) => {
         e.preventDefault();
-        overlayForm.classList.remove('overlay-form--active');
-        document.body.classList.remove('body--active-menu');
+        overlayForm.classList.remove("overlay-form--active");
+        document.body.classList.remove("body--active-menu");
       });
-    })
+    }
+
+    xhr.addEventListener("load", () => {
+      if (xhr.status <= 200) {
+        messageText = xhr.response.message;
+      }
+      showModal(messageText);
+    });
+
+    xhr.addEventListener("error", (e) => {
+      showModal();
+    });
   }
   function validateForm(form) {
     let valid = true;

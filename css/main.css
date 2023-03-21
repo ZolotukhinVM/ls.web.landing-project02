@@ -1094,6 +1094,9 @@ h3 {
   align-items: center;
   position: relative;
 }
+.team__item--active .team__item-name::after {
+  transform: rotate(180deg);
+}
 @media screen and (max-width: 768px) {
   .team__item {
     margin-bottom: 0.8888888889rem;
