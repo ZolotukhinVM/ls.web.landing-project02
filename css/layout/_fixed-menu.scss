@@ -7,6 +7,19 @@
   @include tablets{
     display: none;
   }
+
+  &--black .fixed-menu__link:before,
+  &--black .fixed-menu__link:hover {
+    background: #000;
+    border-color: #000;
+  }
+  
+  &--black .fixed-menu__item--active {
+    .fixed-menu__link {
+      border-color: #000;
+    }
+  }
+
 }
 
 .fixed-menu__item {
@@ -21,6 +34,10 @@
   }
 }
 
+// .is-active .fixed-menu__link {
+//   border-color: #fff; 
+// }
+
 .fixed-menu__link {
   width: rem(16px);
   height: rem(16px);
@@ -29,7 +46,7 @@
   display: block;
   position: relative;
 
-  &:hover {
+  &:hover  {
     border-color: #fff;
     &:before {
       background-color: $bg-button;

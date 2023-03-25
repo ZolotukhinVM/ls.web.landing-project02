@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/slider/slick.css">
   <link rel="stylesheet" href="./css/slider/slick-theme.css">
+  <!-- <link rel="stylesheet" href="./css/layout/docSlider.css"> -->
 </head>
 <body>
   <div class="wrapper">
-    <div class="maincontent"> 
-      <section class="hero">
+    <div class="docSlider maincontent"> 
+
+      <section data-id="hero" data-theme="white" id="hero" class="hero">
         <div class="container hero__container">  
           <header class="header">
             <svg class="logo">
@@ -20,13 +22,14 @@
             </svg>
             <nav class="menu horizontal--menu">
               <ul class="menu__list">
-                <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
-                <li class="menu__item"><a href="#catalog" class="menu__link">Серфборды</a></li>
-                <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
-                <li class="menu__item"><a href="#menu" class="menu__link">Меню</a></li>
-                <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
-                <li class="menu__item"><a href="#work" class="menu__link">Как мы работаем</a></li>
-                <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+                <li class="menu__item"><a data-scroll-to="hero" href="#hero" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a data-scroll-to="why" href="#why" class="menu__link">Почему мы?</a></li>
+                <li class="menu__item"><a data-scroll-to="catalog" href="#catalog" class="menu__link">Серфборды</a></li>
+                <li class="menu__item"><a data-scroll-to="team" href="#team" class="menu__link">Команда</a></li>
+                <li class="menu__item"><a data-scroll-to="reviews" href="#reviews" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a data-scroll-to="video" href="#work" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__item"><a data-scroll-to="order" href="#work" class="menu__link">Заказ</a></li>
+                <li class="menu__item"><a data-scroll-to="contacts" href="#contacts" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
 
@@ -43,7 +46,7 @@
             <h1 class="hero__title">Профессиональные доски для серфинга</h1>
             <div class="hero__title-desc">Самый большой выбор серфбордов в мире</div>
             <div class="hero__button">
-              <a href="#" class="button">Заказать</a>
+              <a href="#" class="button" data-scroll-to="order">Заказать</a>
             </div>
           </div>
           
@@ -73,7 +76,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section data-id="why" data-theme="black" id="why" class="section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему Surfboard?</h2>
@@ -136,7 +139,7 @@
         </div>
       </section>
 
-      <section class="section catalog">
+      <section data-id="catalog" data-theme="black" class="section catalog">
         <div class="container catalog__container">
           <div class="catalog__arrows">
             <a href="#" class="catalog__arrow catalog__arrow--prev">
@@ -224,7 +227,7 @@
                         7000 &#8381;
                       </div>
                       <div class="catalog__order-btn">
-                        <a href="#" class="button">Заказать</a>
+                        <a href="#" class="button" data-scroll-to="order">Заказать</a>
                       </div>
                     </div>
                   </div >
@@ -319,7 +322,7 @@
         </div>
       </section>
 
-      <section class="section team-section">
+      <section data-id="team" data-theme="black" class="section team-section">
         <div class="container">
           <h2 class="section__title">Команда</h2>
             <ul class="team__list">
@@ -368,7 +371,7 @@
         </div>
       </section>
 
-      <section class="section reviews-section">
+      <section data-id="reviews" data-theme="black" class="section reviews-section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -443,7 +446,31 @@
         </div>
       </section>
 
-      <section class="section order-section">
+      <section data-id="video" data-theme="black" class="section">
+        <div class="container player__container">
+          
+          <h2 class="section__title">Как мы работаем</h2>
+
+          <div class="player-section__container">
+            <div class="player">
+              <div class="player__wrapper">
+                <div id="yt-player" class="player__elem"></div>
+                <div class="player__splash"></div>
+              </div>
+              <div class="player__controls">
+                <button class="player__start"></button>
+                <div class="player__playback">
+                  <button class="player__playback-button"></button>
+                </div>
+                  <a href="#" class="player__sound">ON</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section data-id="order" data-theme="white" class="section order-section">
         <div class="container order-container">
           <h2 class="section__title section__title--color--white">Закажите доску</h2>
           <form action="#" class="form">
@@ -524,7 +551,8 @@
         </div>
       </section>
 
-      <section class="map" id="map">
+      <section data-id="contacts" data-theme="black" class="map" id="map">
+
         <footer class="footer">
           <div class="container footer__container">
             <address class="footer__address">
@@ -570,21 +598,23 @@
             </div>
           </div>
         </footer>
+
       </section>
+
     </div>
   </div>
 
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
-      <li class="fixed-menu__item fixed-menu__item--active"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
-      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link"></a></li>
+      <li class="fixed-menu__item fixed-menu__item--active"><a href="#" class="fixed-menu__link" data-scroll-to="hero"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="why"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="catalog"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="team"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="reviews"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="video"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="order"></a></li>
+      <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="contacts"></a></li>
+      <!-- <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="7"></a></li> -->
     </ul>
   </nav>
 
@@ -618,6 +648,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="./js/slick.min.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/form.js"></script>
@@ -625,5 +656,15 @@
   <script src="./js/reviews.js"></script>
   <script src="./js/team.js"></script>
   <script src="./js/map.js"></script>
+  <script src="./js/player.js"></script>
+  <script src="./js/ops.js"></script>
+  <!-- <script src="./js/docSlider.min.js"></script> -->
+  <script>
+    // docSlider.init({
+    //   speed : 1000,
+    //   easing : 'easy'
+    // });
+  </script>
+  <!-- <script src="./js/scroll.js"></script> -->
 </body>
 </html>

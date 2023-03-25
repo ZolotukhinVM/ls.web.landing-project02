@@ -12,8 +12,12 @@
     border-radius: 10px;
     transition: .4s;
   }
+  &--theme--black .hamburger__plank {
+    background: #000;
+  }
   &--active { 
     .hamburger__plank {
+      background: #fff;
       &:nth-child(1){
         opacity:0;
       }

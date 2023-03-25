@@ -38,6 +38,7 @@ send.addEventListener('click', event => {
         messageText = xhr.response.message;
       }
       showModal(messageText);
+      form.reset();
     });
 
     xhr.addEventListener("error", (e) => {

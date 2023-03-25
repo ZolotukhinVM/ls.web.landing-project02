@@ -30,15 +30,21 @@ body {
 }
 
 .wrapper {
-  overflow-x: hidden;
-  min-width: 0px;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.maincontent {
+  height: 100vh;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 section {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .container {
@@ -131,6 +137,13 @@ h3 {
     display: none;
   }
 }
+.fixed-menu--black .fixed-menu__link:before, .fixed-menu--black .fixed-menu__link:hover {
+  background: #000;
+  border-color: #000;
+}
+.fixed-menu--black .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
@@ -183,6 +196,12 @@ h3 {
   height: 4px;
   border-radius: 10px;
   transition: .4s;
+}
+.hamburger--theme--black .hamburger__plank {
+  background: #000;
+}
+.hamburger--active .hamburger__plank {
+  background: #fff;
 }
 .hamburger--active .hamburger__plank:nth-child(1) {
   opacity: 0;
@@ -1162,12 +1181,11 @@ h3 {
 
 .footer {
   padding: 1rem 0;
-  background: #fff;
+  background: #ffffff;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   bottom: 0;
   left: 0;
-  opacity: .9;
   z-index: 9999;
 }
 
@@ -1244,4 +1262,72 @@ address {
 .social__icon:hover {
   fill: #292929;
   animation: zoom 1s ease-in forwards;
+}
+
+.player__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-section__container {
+  width: 36.7777777778rem;
+  height: 21.7777777778rem;
+}
+
+.player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.player__controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  bottom: 0;
+  background: #404040;
+}
+
+.player__start {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #404040;
+  border-color: transparent;
+}
+.player__start::after {
+  content: '>';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: silver;
+}
+
+.paused .player__start:after {
+  content: "||";
+}
+
+.player__playback {
+  position: relative;
+  width: 60%;
+  height: 5px;
+  background: silver;
+}
+.player__playback-button {
+  position: absolute;
+  background-color: #FEDB3F;
+  top: 50%;
+  left: -2%;
+  height: 15px;
+  width: 15px;
+  border: transparent;
+  border-radius: 100%;
+  transform: translateY(-50%);
 }
