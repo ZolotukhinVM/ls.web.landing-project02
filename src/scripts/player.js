@@ -10,7 +10,6 @@ let eventsInit = () => {
       player.pauseVideo();
     } else {
       playerContainer.addClass('paused');
-
       player.playVideo();
     }
   })

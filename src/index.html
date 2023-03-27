@@ -5,10 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>SURFBOARD | 2023</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/slider/slick.css">
-  <link rel="stylesheet" href="./css/slider/slick-theme.css">
-  <!-- <link rel="stylesheet" href="./css/layout/docSlider.css"> -->
+  <link rel="stylesheet" href="./styles/main.min.css">
 </head>
 <body>
   <div class="wrapper">
@@ -614,7 +611,6 @@
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="video"></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="order"></a></li>
       <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="contacts"></a></li>
-      <!-- <li class="fixed-menu__item"><a href="#" class="fixed-menu__link" data-scroll-to="7"></a></li> -->
     </ul>
   </nav>
 
@@ -627,13 +623,14 @@
   <div class="overlay overlay-menu">
       <nav class="menu menu--vertical">
         <ul class="menu__list">
-          <li class="menu__item"><a href="#about" class="menu__link">О нас</a></li>
-          <li class="menu__item"><a href="#catalog" class="menu__link">Серфборды</a></li>
-          <li class="menu__item"><a href="#team" class="menu__link">Команда</a></li>
-          <li class="menu__item"><a href="#menu" class="menu__link">Меню</a></li>
-          <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
-          <li class="menu__item"><a href="#work" class="menu__link">Как мы работаем</a></li>
-          <li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+          <li class="menu__item"><a data-scroll-to="hero" href="#hero" class="menu__link">О нас</a></li>
+          <li class="menu__item"><a data-scroll-to="why" href="#why" class="menu__link">Почему мы?</a></li>
+          <li class="menu__item"><a data-scroll-to="catalog" href="#catalog" class="menu__link">Серфборды</a></li>
+          <li class="menu__item"><a data-scroll-to="team" href="#team" class="menu__link">Команда</a></li>
+          <li class="menu__item"><a data-scroll-to="reviews" href="#reviews" class="menu__link">Отзывы</a></li>
+          <li class="menu__item"><a data-scroll-to="video" href="#work" class="menu__link">Как мы работаем</a></li>
+          <li class="menu__item"><a data-scroll-to="order" href="#work" class="menu__link">Заказ</a></li>
+          <li class="menu__item"><a data-scroll-to="contacts" href="#contacts" class="menu__link">Контакты</a></li>
         </ul>
       </nav>
   </div>
@@ -645,26 +642,8 @@
     </div>
   </div>
 
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
-  <script src="./js/slick.min.js"></script>
-  <script src="./js/slider.js"></script>
-  <script src="./js/form.js"></script>
-  <script src="./js/menu-modal.js"></script>
-  <script src="./js/reviews.js"></script>
-  <script src="./js/team.js"></script>
-  <script src="./js/map.js"></script>
-  <script src="./js/player.js"></script>
-  <script src="./js/ops.js"></script>
-  <!-- <script src="./js/docSlider.min.js"></script> -->
-  <script>
-    // docSlider.init({
-    //   speed : 1000,
-    //   easing : 'easy'
-    // });
-  </script>
-  <!-- <script src="./js/scroll.js"></script> -->
+  <script src="./scripts/main.min.js"></script>
 </body>
 </html>
