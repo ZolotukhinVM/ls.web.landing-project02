@@ -3,6 +3,7 @@
   const display = $('.maincontent');
   const sideMenu = $('.fixed-menu');
   let inScroll = false;
+  const md = new MobileDetect(window.navigator.userAgent);  
   
   sections.first().addClass('active');
   
@@ -89,7 +90,7 @@
     }
   })
   
-  
+
   $('[data-scroll-to]').click(e => {
     e.preventDefault();
     $this = $(e.currentTarget);
@@ -99,3 +100,15 @@
     sectionTransition(reqSection.index());
   });
 })();
+
+// if (md.mobile()) {
+//   $('.wrapper').on('touchmove', e => e.preventDefault());
+//   $('body').swipe( {
+//     swipe:function(direction) {
+//       alert("You swiped " + direction );  
+//       scrollDirection = "";
+//       (direction == "up") ? scrollDirection = "prev" : scrollDirection = "next";
+//       scrollViewport(scrollDirection);
+//     }
+//   });
+// }

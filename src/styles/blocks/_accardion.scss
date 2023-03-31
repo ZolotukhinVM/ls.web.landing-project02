@@ -1,0 +1,69 @@
+.products-section {
+  position: relative;
+  background: url('../../images/accardion/menu00.jpeg') center center / cover no-repeat;
+  color: #fff;
+}
+.products {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  justify-content: flex-end;
+
+
+  &__item {
+    display: flex;
+    z-index: 2;
+
+    &--active {
+      .products__desc {
+        opacity: 1;
+      }
+    }
+
+    @include phones {
+      z-index: 0;
+      &--active {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3;
+      }
+    }
+  }
+
+  &__button {
+    min-width: rem(100px);
+    background: center center / cover no-repeat;
+    position: relative;
+
+    &-text {
+      position: absolute;
+      transform: rotate(-90deg) translateX(-50%);
+      transform-origin: 0;
+      left: 50%;
+      bottom: rem(150px);
+      font-size: rem(48px);
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+
+  &__content {
+    width: 0;
+    overflow: hidden;
+    transition: width .3s linear;
+    background: rgba(51, 53, 55, 0.9);
+  }
+
+  &__desc {
+    line-height: 1.8;
+    padding: 20px 30px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+  }
+}

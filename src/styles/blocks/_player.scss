@@ -1,17 +1,27 @@
+.player__wrapper {
+  width: rem(662px);
+  height: rem(392px);
+
+  @include tablets {
+    width: rem(450px);
+    height: rem(300px);
+  }
+  @include phones {
+    width: rem(330px);
+    height: rem(185px);
+  }
+}
 .player__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.player-section__container {
-  width: rem(662px);
-  height: rem(392px);
-}
+
 .player {
   position: relative;
   display: block;
-  width: 100%;
+  width: 100%; 
   height: 100%;
 }
 

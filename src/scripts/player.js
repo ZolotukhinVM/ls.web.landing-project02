@@ -50,8 +50,8 @@ $('.player__playback').click(e => {
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
-    height: '392',
-    width: '662',
+    height: '100%',
+    width: '100%',
     videoId: 'XBzyrBeb-dw',
     events: {
       'onReady': onPlayerReady

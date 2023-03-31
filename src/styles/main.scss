@@ -36,18 +36,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
 
-// @import "./layout/*.scss";
 @import "./layout/media";
 @import "./layout/base";
 @import "./layout/fixed-menu";
 @import "./layout/hamburger";
 
-@import "./blocks/hero";
-@import "./blocks/why";
-@import "./blocks/catalog";
-@import "./blocks/map";
-@import "./blocks/reviews";
-@import "./blocks/order";
-@import "./blocks/team";
-@import "./blocks/footer";
-@import "./blocks/player";
+@import "./blocks/*.scss";
+// @import "./blocks/hero";
+// @import "./blocks/why";
+// @import "./blocks/catalog";
+// @import "./blocks/map";
+// @import "./blocks/reviews";
+// @import "./blocks/order";
+// @import "./blocks/team";
+// @import "./blocks/footer";
+// @import "./blocks/player";
